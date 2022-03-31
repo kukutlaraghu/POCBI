@@ -1,0 +1,28 @@
+#%RAML 1.0
+title: emp_onboard_api
+description: employee on board
+baseUri: https://localhost:8081/emp_onboard_aapi/v1
+/add_emp:
+  post:
+   body:
+      application/json:
+        example:
+          {
+                "empname":"Venkat",
+                "empAddress":"Hyderabad"
+          }
+   responses:
+        200:
+          body:
+            application/json:
+              example:
+                {
+                  "status":200,
+                  "message":"Success"
+                   
+                }
+          
+            
+              
+                        
+  
